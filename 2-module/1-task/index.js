@@ -1,8 +1,9 @@
-function sumSalary(salaries) {
+function sumSalaries(salaries) {
   let sum = 0;
   for (let key in salaries) {
-    if (typeof salaries[key] === 'number' && key !== 'isPayed') {
-      sum += salaries[key];
+    const value = salaries[key];
+    if (typeof value === 'number' && Number.isFinite(value)) {
+      sum += value;
     }
   }
   return sum;
