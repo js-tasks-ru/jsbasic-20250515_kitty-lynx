@@ -4,5 +4,3 @@ function hideSelf() {
     btn1.hidden = true;
   });
 }
-
-hideSelf();

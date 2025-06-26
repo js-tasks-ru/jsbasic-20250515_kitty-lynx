@@ -27,6 +27,3 @@ function initCarousel() {
     arrowLeft.style.display = currentPosition === 0 ? 'none' : '';
   }
 }
-
-
-document.addEventListener('DOMContentLoaded', initCarousel);
